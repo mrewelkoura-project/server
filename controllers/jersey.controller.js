@@ -15,11 +15,12 @@ const getJerseys = (req, res) => {
 
 // post data into the DB
 const createJersey = (req, res) => {
-
   Jersey.create({
     name: req.body.name,
     desc: req.body.desc,
-    img: req.body.img,})
+    img: req.body.img,
+    price:req.body.price
+  })
     .then((result) => {
       res.send(result);
       console.log(result);

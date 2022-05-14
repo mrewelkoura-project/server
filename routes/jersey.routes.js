@@ -1,9 +1,9 @@
 const router = require("express").Router();
 const jerseyController = require("../controllers/jersey.controller");
 
-router.get("/jerseysdata", jerseyController.getJerseys);
+router.get("/data", jerseyController.getJerseys);
 
-router.post("/postjersey", jerseyController.createJersey);
+router.post("/post", jerseyController.createJersey);
 
 router.put("/id:update", jerseyController.editJersey);
 
