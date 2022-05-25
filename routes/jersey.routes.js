@@ -1,4 +1,5 @@
 const router = require("express").Router();
+
 const jerseyController = require("../controllers/jersey.controller");
 
 router.get("/data", jerseyController.getJerseys);

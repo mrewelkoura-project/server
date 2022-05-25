@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
 const db = require("./index.js");
 
-// database schema
+// jerseyData schema
 const jerseySchema = new mongoose.Schema({
   name:String,
   desc:String,
